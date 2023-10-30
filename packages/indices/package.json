@@ -1,0 +1,28 @@
+{
+  "name": "@docs/indices",
+  "version": "1.0.0",
+  "description": "Generate indices markdown from indices.yaml",
+  "main": "index.ts",
+  "repository": "vulncheck/docs",
+  "author": "Kevin Olson",
+  "license": "MIT",
+  "dependencies": {
+    "ts-node": "^10.9.1",
+    "yaml": "^2.3.1"
+  },
+  "scripts": {
+    "import-from-api": "ts-node import-from-api.ts",
+    "generate-markdowns": "ts-node generate-markdown.ts",
+    "generate-api": "ts-node generate-api.ts",
+    "import-from-issues": "ts-node import-from-issues.ts"
+  },
+  "devDependencies": {
+    "@inquirer/prompts": "^3.2.0",
+    "@octokit/core": "^5.0.1",
+    "@octokit/plugin-throttling": "^8.0.0",
+    "@octokit/rest": "^20.0.2",
+    "@types/node": "^20.5.6",
+    "dayjs": "^1.11.10",
+    "dotenv": "^16.3.1"
+  }
+}

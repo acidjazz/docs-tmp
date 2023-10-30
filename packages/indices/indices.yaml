@@ -1,0 +1,1561 @@
+indices:
+  - name: abb
+    title: ABB Vulnerabilities
+    struct: advisory.ABBAdvisory{}
+    desc: ABB vulnerabilities refer to security flaws that can be exploited in
+      products and systems developed by ABB, a multinational technology company.
+      These vulnerabilities can potentially lead to unauthorized access,
+      manipulation of data, and disruption of critical infrastructure.
+  - name: adobe
+    title: Adobe Vulnerabilities
+    struct: advisory.AdobeAdvisory{}
+    desc: Adobe Security Bulletins are official notifications released by Adobe
+      Systems to address security vulnerabilities and updates in their software
+      products. These bulletins provide important information about the
+      vulnerabilities, their potential impact, and recommendations for users to
+      apply necessary patches or updates to ensure the security of their
+      systems.
+  - name: alma
+    title: Alma Linux Advisories
+    struct: advisory.AlmaLinuxUpdate{}
+    noCve: true
+    desc: AlmaLinux is a popular community-driven Linux distribution that is built
+      as a replacement for CentOS, which was recently discontinued by Red Hat.
+      Like any other operating system, AlmaLinux is not immune to
+      vulnerabilities and security flaws. Errata vulnerabilities refer to
+      security issues that have been identified in a software system and require
+      a patch or update to fix them. AlmaLinux has a dedicated team that
+      constantly monitors for errata vulnerabilities and releases patches and
+      updates to ensure that the system remains secure.
+  - name: alpine
+    title: Alpine Linux Advisories
+    struct: advisory.AlpineLinuxSecDB{}
+    noCve: true
+    desc: The Alpine Linux Security Database is a public repository that maintains a
+      comprehensive list of security vulnerabilities that have been identified
+      in the Alpine Linux distribution. This database is an essential resource
+      for Alpine Linux users who want to stay informed about potential security
+      threats and vulnerabilities. The database provides detailed information
+      about each security issue, including its severity level, affected
+      components, and recommended fixes. Additionally, the Alpine Linux Security
+      Team regularly updates the database with new vulnerabilities and patches,
+      ensuring that users have access to the latest information and
+      recommendations for securing their systems. The Alpine Linux Security
+      Database is a critical component of the distribution's security
+      infrastructure, and its transparency and accessibility reflect the
+      project's commitment to ensuring the safety and reliability of its users'
+      systems.
+  - name: amazon
+    title: Amazon Linux Security Center
+    struct: advisory.Update{}
+    large: true
+    desc: The Amazon Linux Security Center is a dedicated portal that provides users
+      of Amazon Linux with a central location for information related to
+      security on the platform. The security center includes access to
+      documentation, guidance, and best practices to help users configure and
+      secure their Amazon Linux environments. The center also provides access to
+      the Amazon Linux AMI vulnerability database, which lists all known
+      security vulnerabilities affecting the operating system, as well as
+      information on how to mitigate each vulnerability.
+  - name: android
+    title: Android Security Bulletins
+    desc: Android security bulletins are official notifications released by Google
+      to address security vulnerabilities and updates in their software
+      products. These advisories provide important information about the
+      vulnerabilities, their potential impact, and recommendations for users to
+      apply necessary patches or updates to ensure the security of their
+      systems.
+    struct: advisory.AndroidAdvisory{}
+  - name: apple
+    title: Apple Security Updates
+    params: vulncheck.DefaultParams.CVEField("components.cve")
+    struct: advisory.AppleAdvisory{}
+    desc: Apple regularly releases security updates to address vulnerabilities in
+      its operating systems, software applications, and devices. These updates
+      are critical for maintaining the security of Apple products and protecting
+      users from potential cyber threats. Apple encourages users to promptly
+      install security updates to ensure that their devices are protected
+      against known vulnerabilities and to stay vigilant against potential new
+      threats.
+  - name: arch
+    title: Arch Linux
+    struct: advisory.ArchIssue{}
+    params: vulncheck.DefaultParams.CVEField("Issues")
+    desc: Arch Linux's rolling-release model ensures that security patches are
+      promptly released and distributed to users, minimizing the exposure to
+      known vulnerabilities and providing a relatively secure system when kept
+      up to date.
+  - name: asus
+    title: ASUSTek Computer Inc.
+    struct: advisory.Asus{}
+    desc: Asus security advisories are official notifications released by Asus to
+      address security vulnerabilities and updates in their software products.
+      These advisories provide important information about the vulnerabilities,
+      their potential impact, and recommendations for users to apply necessary
+      patches or updates to ensure the security of their systems.
+  - name: atlassian
+    title: Atlassian Security Advisories
+    struct: advisory.AtlassianAdvisory{}
+    desc: Atlassian security advisories are official notifications released by
+      Atlassian to address security vulnerabilities and updates in their
+      software products. These advisories provide important information about
+      the vulnerabilities, their potential impact, and recommendations for users
+      to apply necessary patches or updates to ensure the security of their
+      systems. Security advisories for Atlassian server products are released
+      every Wednesday.
+  - name: auscert
+    title: AusCERT Bulletins
+    struct: advisory.AusCert{}
+    large: true
+    desc: AusCERT Bulletins are periodic publications issued by AusCERT to inform
+      their members about the latest cybersecurity threats, vulnerabilities, and
+      incidents. These bulletins provide concise summaries, technical details,
+      and recommended actions to mitigate risks and protect systems and
+      networks. They serve as valuable resources for organizations seeking
+      up-to-date information and guidance to enhance their security defenses.
+  - name: aveva
+    title: AVEVA Group Limited
+    struct: advisory.AVEVAAdvisory{}
+    desc: Aveva security advisories are official notifications released by Aveva to
+      address security vulnerabilities and updates in their software products.
+      These advisories provide important information about the vulnerabilities,
+      their potential impact, and recommendations for users to apply necessary
+      patches or updates to ensure the security of their systems.
+  - name: bandr
+    title: B&R Security Advisories
+    struct: advisory.Bandr{}
+    desc: B&R Security Bulletins are regular notifications released by B&R
+      Industrial Automation, a leading provider of automation solutions. These
+      bulletins aim to address security vulnerabilities and provide updates
+      related to B&R's products and software. They offer important information
+      on potential risks, recommended patches or updates, and best practices to
+      enhance the security of B&R automation systems deployed in various
+      industries.
+  - name: baxter
+    title: Baxter Security Advisories
+    struct: advisory.BaxterAdvisory{}
+    desc: Baxter Security Advisories are official notifications issued by Baxter
+      International, a global healthcare company, to address security
+      vulnerabilities and updates in their medical devices and software. These
+      advisories inform healthcare professionals and users about potential
+      risks, recommended actions, and available patches or updates to ensure the
+      security and integrity of Baxter's products. They play a crucial role in
+      promoting patient safety and guiding healthcare organizations in
+      implementing necessary security measures.
+  - name: bbraun
+    title: B. Braun Medical Security Advisories
+    struct: advisory.BBraunAdvisory{}
+    desc: BBraun security advisories are official notifications released by BBraun
+      to address security vulnerabilities and updates in their software
+      products. These advisories provide important information about the
+      vulnerabilities, their potential impact, and recommendations for users to
+      apply necessary patches or updates to ensure the security of their
+      systems.
+  - name: bd
+    title: Becton Dickinson Advisories
+    struct: advisory.BectonDickinsonAdvisory{}
+    desc: The `bd` index contains data on advisories published by Becton Dickinson.
+      Becton Dickinson is a medical technology company that develops,
+      manufactures, and sells medical devices, instrument systems, and reagents.
+      The company is headquartered in Franklin Lakes, New Jersey, United States.
+  - name: bdu
+    title: BDU Advisories
+    struct: advisory.BDUAdvisory{}
+    filters: vulncheck.DefaultFilters.PubField("identify_date")
+    desc: The `bdu` index contains security advisories that are official
+      communications issued by military or government agencies to provide
+      information, guidance, and updates related to security risks and threats.
+      These advisories are designed to provide personnel with essential
+      information and recommendations to minimize the risk of security incidents
+      and protect critical assets.
+  - name: beckhoff
+    title: Beckhoff Security Advisories
+    struct: advisory.BeckhoffAdvisory{}
+    desc: Beckhoff Advisories are security notifications issued by Beckhoff
+      Automation, a prominent provider of automation technology. These
+      advisories inform customers and users about potential vulnerabilities,
+      patches, and mitigations related to Beckhoff's hardware, software, and
+      industrial control systems. They provide essential information and
+      guidance to help organizations protect their automation infrastructure and
+      ensure the secure operation of their Beckhoff-based systems.
+  - name: belden
+    title: Belden Security Bulletins Security Advisories
+    struct: advisory.BeldenAdvisory{}
+    desc: Belden Security Bulletins are regular notifications issued by Belden Inc.,
+      a global leader in signal transmission solutions. These bulletins provide
+      updates, advisories, and recommendations related to the security of
+      Belden's products and systems, including network infrastructure,
+      industrial control systems, and data centers. They serve as a valuable
+      resource for Belden customers and users to stay informed about potential
+      vulnerabilities, best practices, and available patches or updates to
+      ensure the security and reliability of their communication networks.
+  - name: bosch
+    title: Bosch Security Advisories
+    struct: advisory.BoschAdvisory{}
+    desc: Bosch Security Advisories are official notifications released by Bosch, a
+      renowned technology company, to address security vulnerabilities and
+      updates in their security products and solutions. These advisories provide
+      detailed information on identified vulnerabilities, potential risks, and
+      recommended actions to mitigate security threats. By promptly informing
+      customers and users about vulnerabilities and offering guidance, Bosch
+      Security Advisories help maintain the integrity and resilience of their
+      security systems and protect against potential cyberattacks.
+  - name: boston-scientific
+    title: Boston Scientific Advisories
+    struct: advisory.BostonScientificAdvisory{}
+    desc: Boston Scientific Advisories are official notifications released by Boston
+      Scientific Corporation, a global medical technology company. These
+      advisories inform healthcare professionals and users about important
+      updates, safety concerns, and recommended actions related to Boston
+      Scientific medical devices and therapies. They play a critical role in
+      ensuring patient safety and guiding healthcare providers in implementing
+      necessary measures to address potential risks and maintain the proper
+      functioning of Boston Scientific products.
+  - name: ca-cyber-centre
+    title: Canadian Centre for Cyber Security Alerts and Advisories
+    desc: The Cyber Centre issues alerts and advisories on potential, imminent or
+      actual cyber threats, vulnerabilities or incidents affecting Canada's
+      critical infrastructure.
+    struct: advisory.CACyberCentreAdvisory{}
+  - name: canvas
+    title: CANVAS Exploit Packs
+    struct: advisory.CanvasExploit{}
+    desc: CANVAS Exploit Packs developed by Gleg are powerful tools used in
+      penetration testing and vulnerability assessment. These exploit packs
+      provide a comprehensive range of exploits and attack vectors to assess the
+      security of computer systems and applications.
+  - name: carestream
+    title: Carestream Product Security Advisories
+    struct: advisory.CarestreamAdvisory{}
+    desc: Carestream Product Security Advisories are official notifications released
+      by Carestream Health, a leading provider of medical imaging and healthcare
+      IT solutions. These advisories address security vulnerabilities and
+      updates related to Carestream's products and software in the healthcare
+      industry. They provide essential information, including the nature of the
+      vulnerability, potential risks, recommended actions, and available patches
+      or updates to mitigate security risks and ensure the confidentiality,
+      integrity, and availability of patient data and healthcare systems.
+      Carestream Product Security Advisories are crucial in helping healthcare
+      organizations maintain a secure and protected environment for patient
+      care.
+  - name: cargo
+    title: Cargo (Rust) packages with package versions
+    struct: api.OSSPackage{}
+    params: vulncheck.DefaultParams.CVEField("cves")
+    desc: Cargo (Rust) packages with package versions, associated licenses, and
+      relevant CVEs
+  - name: centos
+    title: CentOS Security Advisories
+    struct: advisory.CESA{}
+    desc: CentOS Security Advisories are official notifications issued by the CentOS
+      project, a popular open-source Linux distribution. These advisories
+      provide information on security vulnerabilities, patches, and updates
+      relevant to CentOS operating systems. They help CentOS users stay informed
+      about potential risks, recommended actions, and available fixes to
+      maintain the security and stability of their CentOS-based systems. CentOS
+      Security Advisories play a vital role in assisting system administrators
+      and users in effectively managing and securing their CentOS deployments.
+  - name: certeu
+    title: CERT-EU The Computer Emergency Response Team for the EU Institutions
+    struct: advisory.CERTEUAdvisory{}
+    desc: Cert-EU Bulletins are periodic publications issued by Cert-EU to inform
+      their members about the latest cybersecurity threats, vulnerabilities, and
+      incidents. These bulletins provide concise summaries, technical details,
+      and recommended actions to mitigate risks and protect systems and
+      networks.
+  - name: chrome
+    title: Release updates from the Chrome team
+    struct: advisory.Chrome{}
+    desc: Chrome release updates are periodic publications issued by the Google
+      Chrome team to inform their members about the latest cybersecurity
+      threats, vulnerabilities, and incidents. These bulletins provide concise
+      summaries, technical details, and recommended actions to mitigate risks
+      and protect systems and networks.
+  - name: cisa-alerts
+    title: CISA Security Advisories
+    struct: advisory.CISAAlert{}
+    desc: CISA (Cybersecurity and Infrastructure Security Agency) Alerts are
+      official notifications issued by the United States' primary federal agency
+      responsible for cybersecurity. These alerts provide timely and actionable
+      information on emerging cyber threats, vulnerabilities, and incidents
+      affecting critical infrastructure sectors. CISA Alerts offer guidance,
+      recommended mitigation measures, and best practices to enhance the
+      security and resilience of organizations, promoting a proactive approach
+      to protecting critical systems and networks from cyber threats.
+  - name: cisa-kev
+    title: CISA Known Exploited Vulnerabilities
+    desc: The CISA Known Exploit Vulnerabilities catalog contains a list of
+      exploited vulnerabilities known to CISA.
+    struct: advisory.KEVCatalogVulnerability{}
+  - name: cisco
+    title: Cisco Security Advisories
+    desc: Cisco security advisories are official notifications released by Cisco to
+      address security vulnerabilities and updates in their software products.
+      These advisories provide important information about the vulnerabilities,
+      their potential impact, and recommendations for users to apply necessary
+      patches or updates to ensure the security of their systems.
+    struct: advisory.CiscoAdvisory{}
+  - name: cisco-talos
+    title: Cisco Talos Advisories
+    struct: advisory.TalosAdvisory{}
+    desc: The `cisco-talos` Security Advisories are official notifications released
+      by the Talos research group within Cisco that provide information and
+      updates on potential security vulnerabilities and threats affecting Cisco
+      products and services.
+  - name: citrix
+    title: Citrix Security Advisories
+    struct: advisory.CitrixAdvisory{}
+    desc: Citrix Security Advisories are official notifications released by Citrix
+      Systems, a leading provider of digital workspace and networking solutions.
+      These advisories address security vulnerabilities and updates in Citrix
+      products, such as Citrix ADC, Citrix Gateway, and Citrix Virtual Apps and
+      Desktops. They provide detailed information about the vulnerabilities,
+      potential impact, and recommended actions, including patches or
+      workarounds, to mitigate the risks. Citrix Security Advisories play a
+      crucial role in helping organizations maintain the security and integrity
+      of their Citrix deployments and protect against potential cyber threats.
+  - name: claroty
+    title: "Team 82: The Claroty Research Team"
+    struct: advisory.ClarotyVulnerability{}
+    desc: Team82 aligns with defenders of industrial, healthcare, and commercial
+      networks, and provides indispensable threat and vulnerability research in
+      order to ensure the safety, reliability, and integrity of systems within
+      critical industries.
+  - name: cloudvulndb
+    title: CloudVulnDB
+    struct: advisory.CloudVulnDBAdvisory{}
+    desc: CloudVulnDB is a comprehensive and continuously updated database that
+      focuses on cataloging security vulnerabilities specific to cloud services
+      and environments. It provides detailed information about vulnerabilities,
+      including their impact, severity, affected platforms, and recommended
+      mitigation strategies. CloudVulnDB serves as a valuable resource for
+      security professionals and organizations seeking to proactively identify
+      and address vulnerabilities in their cloud infrastructure, enabling them
+      to enhance their overall security posture.
+  - name: cnnvd
+    title: The Chinese National Vulnerability Database
+    struct: advisory.CNNVDEntryJSON{}
+    desc: The Chinese National Vulnerability Database is one of two national
+      vulnerability databases of the People’s Republic of China. It is operated
+      by the China Information Technology Security Evaluation Center, the 13th
+      Bureau of China’s foreign intelligence service, the Ministry of State
+      Security.
+  - name: cnvd-bulletins
+    title: CNVD Bulletins
+    struct: advisory.CNVDBulletin{}
+    desc: The Chinese National Vulnerability Database (CNVD) is a service
+      responsible for collecting and sharing information about software
+      vulnerabilities that affect Chinese information systems. The CNVD
+      publishes advisories about security flaws and vulnerabilities that have
+      been identified in software products and systems.
+  - name: cnvd-flaws
+    title: CNVD Flaws
+    struct: advisory.CNVDFlaw{}
+    desc: The Chinese National Vulnerability Database (CNVD) is a service
+      responsible for collecting and sharing information about software
+      vulnerabilities that affect Chinese information systems. The CNVD
+      publishes advisories about security flaws and vulnerabilities that have
+      been identified in software products and systems.
+  - name: cocoapods
+    title: CocoaPods packages with package versions
+    struct: api.OSSPackage{}
+    params: vulncheck.DefaultParams.CVEField("cves")
+    desc: CocoaPods (Swift, Objective-C) packages with package versions, associated
+      licenses, and relevant CVEs
+  - name: codesys
+    title: Codesys Advisories
+    struct: advisory.CodesysAdvisory{}
+    desc: CODESYS Advisories are official notifications issued by CODESYS, a widely
+      used development environment for programming industrial control systems.
+      These advisories highlight security vulnerabilities, patches, and updates
+      related to the CODESYS software. They provide important information on
+      potential risks, recommended actions, and available fixes to address
+      vulnerabilities and protect industrial automation systems from potential
+      cyber threats. CODESYS Advisories help ensure the secure operation of
+      control systems and assist system integrators and operators in maintaining
+      the integrity and reliability of their industrial processes.
+  - name: composer
+    title: PHP Composer packages with package versions
+    struct: api.OSSPackage{}
+    params: vulncheck.DefaultParams.CVEField("cves")
+    desc: Composer (PHP) packages with package versions, associated licenses, and
+      relevant CVEs
+  - name: conan
+    title: C/C++ packages with package versions
+    struct: api.OSSPackage{}
+    params: vulncheck.DefaultParams.CVEField("cves")
+    desc: Conan (C/C++) packages with package versions, associated licenses, and
+      relevant CVEs
+  - name: crestron
+    title: Crestron Security Advisories
+    struct: advisory.Crestron{}
+    desc: Crestron security advisories are official notifications released by
+      Crestron to address security vulnerabilities and updates in their software
+      products. These advisories provide important information about the
+      vulnerabilities, their potential impact, and recommendations for users to
+      apply necessary patches or updates to ensure the security of their
+      systems.
+  - name: curl
+    title: Curl CVEs
+    desc: Curl CVEs are official notifications released by the Curl open source
+      project to address security vulnerabilities and updates in curl. These
+      advisories provide important information about the vulnerabilities, their
+      potential impact, and recommendations for users to apply necessary patches
+      or updates to ensure the security of their systems.
+    struct: advisory.Curl{}
+  - name: cwe
+    title: Common Weakness Enumeration Database
+    noCve: true
+    desc: The MITRE Common Weakness Enumeration (CWE) is a community-developed list
+      of common software security weaknesses. The CWE is maintained by the MITRE
+      Corporation, a not-for-profit organization that operates federally funded
+      research and development centers (FFRDCs) sponsored by the U.S.
+      government. The CWE is a valuable resource for software developers,
+      security professionals, and other stakeholders in the software industry.
+      It provides a standardized way to identify and describe common software
+      security weaknesses, which helps to improve the security of software
+      systems and applications.
+  - name: debian
+    title: Debian Security Advisories
+    params: vulncheck.DefaultParams.CVEField("associated_cves.cve")
+    desc: Debian Security Tracker - `debian-security-tracker` index is a service
+      that provides information and updates on security vulnerabilities and
+      issues affecting Debian packages and software. The Debian Security Tracker
+      is a centralized repository for security-related information about Debian
+      packages, including vulnerability reports, security advisories, and
+      security updates. The tracker is designed to help users and administrators
+      maintain the security of their Debian-based systems.
+  - name: debian-dsa
+    title: Debian Security Advisories
+    struct: advisory.DebianSecurityAdvisory{}
+    desc: Debian DSA (Debian Security Advisory) - `debian-dsa` index is a series of
+      security advisories published by the Debian Project, a non-profit
+      organization that develops and distributes the Debian operating system.
+      These advisories provide information and guidance on security
+      vulnerabilities and issues affecting Debian packages and software.
+  - name: dell
+    title: Dell Security Advisories
+    struct: advisory.Dell{}
+    desc: >
+      Dell security advisories are official notifications released by Dell to
+      address security vulnerabilities and updates in their software products.
+      These advisories provide important information about the vulnerabilities,
+      their potential impact, and recommendations for users to apply necessary
+      patches or updates to ensure the security of their systems.
+  - name: delta
+    title: Delta Controls Security Bulletins
+    desc: Delta Controls security bulletins are official notifications released by
+      Delta Controls to address security vulnerabilities and updates in their
+      software products. These advisories provide important information about
+      the vulnerabilities, their potential impact, and recommendations for users
+      to apply necessary patches or updates to ensure the security of their
+      systems.
+    struct: advisory.DeltaAdvisory{}
+  - name: dotcms
+    title: DotCMS Security Advisories
+    struct: advisory.DotCMS{}
+    desc: >
+      dotCMS security advisories are official notifications released by dotCMS
+      to address security vulnerabilities and updates in their software
+      products. These advisories provide important information about the
+      vulnerabilities, their potential impact, and recommendations for users to
+      apply necessary patches or updates to ensure the security of their
+      systems.
+  - name: dragos
+    title: Dragos SecurityAdvisories
+    struct: advisory.DragosAdvisory{}
+    desc: >
+      Dragos security advisories are official notifications released by Dragos
+      to address security vulnerabilities and updates in their software
+      products. These advisories provide important information about the
+      vulnerabilities, their potential impact, and recommendations for users to
+      apply necessary patches or updates to ensure the security of their
+      systems.
+  - name: draytek
+    title: DrayTek Security Advisories
+    struct: advisory.Draytek{}
+    desc: >
+      DrayTek security advisories are official notifications released by DrayTek
+      to address security vulnerabilities and updates in their software
+      products. These advisories provide important information about the
+      vulnerabilities, their potential impact, and recommendations for users to
+      apply necessary patches or updates to ensure the security of their
+      systems.
+  - name: eaton
+    title: Eaton Advisories
+    struct: advisory.EatonAdvisory{}
+    desc: >
+      Eaton Security Advisories typically include detailed technical information
+      about the vulnerability or issue, as well as recommendations for
+      remediation and risk mitigation. They may also include severity ratings
+      and CVSS scores to help organizations prioritize their response to
+      potential security incidents. Eaton's security team works closely with
+      customers and partners to identify and address security concerns, and is
+      committed to providing timely and effective security advisories to help
+      protect critical assets and data.
+  - name: elastic
+    title: Elastic Security Advisories
+    struct: advisory.Elastic{}
+    desc: >
+      Elasticsearch security advisories are official notifications released by
+      Elasticsearch to address security vulnerabilities and updates in their
+      software products. These advisories provide important information about
+      the vulnerabilities, their potential impact, and recommendations for users
+      to apply necessary patches or updates to ensure the security of their
+      systems.
+  - name: emerson
+    title: Emerson Cyber Security Notifications
+    struct: advisory.EmersonAdvisory{}
+    desc: >
+      Emerson Cyber Security Notifications are official alerts and notifications
+      provided by Emerson, a global technology and engineering company. These
+      notifications highlight emerging cyber threats, vulnerabilities, and
+      security updates related to Emerson's automation and control systems. They
+      provide critical information, recommendations, and patches to enhance the
+      cybersecurity posture of industrial environments and protect critical
+      infrastructure from potential cyberattacks.
+  - name: eol
+    title: VulnCheck EOL Coverage
+    struct: advisory.EOLReleaseData{}
+    noCve: true
+    desc: >
+      The VulnCheck EOL index contains a set of operating systems with
+      associated end-of-life and long term support information.
+  - name: epss
+    title: EPSS Data
+    desc: The Exploit Prediction Scoring System (EPSS) is a data-driven effort for
+      estimating the probability that a software vulnerability will be exploited
+      in the wild.
+    struct: api.EPSSData{}
+    params: vulncheck.DefaultParams.CVEField("cve")
+  - name: exploit-chains
+    title: VulnCheck Exploit Chains
+    params: vulncheck.DefaultParams.CVEField("cves.cve")
+    desc: >
+      Exploit chains advisories are a type of security advisory that focus on
+      the combination of multiple exploits or vulnerabilities that together
+      create a more significant security risk. These advisories typically
+      describe how an attacker could use multiple vulnerabilities in sequence to
+      achieve a desired outcome, such as gaining unauthorized access to a system
+      or stealing sensitive information.
+  - name: exploits
+    title: Vulncheck Exploit Intelligence Data
+    params: vulncheck.DefaultParams.CVEField("id")
+    struct: api.ExploitV3Result{}
+    desc: >
+      VulnCheck Exploit Intelligence helps organizations track all of the
+      world’s exploit proof-of-concept code, exploited in-the-wild information,
+      and exploit metadata including timelines, to focus remediation resources
+      on the right vulnerabilities.
+  - name: fedora
+    title: Fedora Security Advisories
+    struct: advisory.Update{}
+    desc: >
+      Fedora security advisories are official notifications released by Fedora
+      to address security vulnerabilities and updates in their software
+      products. These advisories provide important information about the
+      vulnerabilities, their potential impact, and recommendations for users to
+      apply necessary patches or updates to ensure the security of their
+      systems.
+  - name: fortinet
+    title: FortiGuard Fortinet
+    struct: advisory.FortinetAdvisory{}
+    desc: >
+      FortiGuard, by Fortinet, is a comprehensive and integrated security
+      platform that offers threat intelligence, research, and protection against
+      a wide range of cyber threats. It provides real-time updates on the latest
+      threats and vulnerabilities, including malware, exploits, and botnets,
+      enabling organizations to proactively defend their networks and systems.
+      FortiGuard's threat intelligence and security services are a key component
+      of Fortinet's security solutions, delivering advanced protection and
+      continuous monitoring to safeguard against evolving cyber threats.
+  - name: freebsd
+    title: FreeBSD Security Advisories
+    desc: FreeBSD security advisories are official notifications released by the
+      FreeBSD security team to address security vulnerabilities and updates in
+      the open source FreeBSD operating system. These advisories provide
+      important information about the vulnerabilities, their potential impact,
+      and recommendations for users to apply necessary patches or updates to
+      ensure the security of their systems.
+    struct: advisory.Advisory{}
+  - name: gallagher
+    title: Gallagher Security Advisories
+    desc: Gallagher security advisories are official notifications released by
+      Gallagher to address security vulnerabilities and updates in their
+      software products. These advisories provide important information about
+      the vulnerabilities, their potential impact, and recommendations for users
+      to apply necessary patches or updates to ensure the security of their
+      systems.
+    struct: advisory.Gallagher{}
+  - name: ge-healthcare
+    title: GE Healthcare Advisories
+    struct: advisory.GEHealthcareAdvisory{}
+    desc: >
+      GE Healthcare Advisories are official communications issued by GE
+      Healthcare, a global medical technology company, to provide information
+      and guidance on potential security vulnerabilities and threats affecting
+      GE Healthcare products and services.
+  - name: gem
+    title: Ruby (gem) packages with package versions
+    struct: api.OSSPackage{}
+    params: vulncheck.DefaultParams.CVEField("cves")
+    desc: >
+      Gem (Ruby) packages with package versions, associated licenses, and
+      relevant CVEs
+  - name: gigabyte
+    title: GIGABYTE Security Advisories
+    struct: advisory.Gigabyte{}
+    desc: >
+      Gigabyte security advisories are official notifications released by
+      Gigabyte to address security vulnerabilities and updates in their software
+      products. These advisories provide important information about the
+      vulnerabilities, their potential impact, and recommendations for users to
+      apply necessary patches or updates to ensure the security of their
+      systems.
+  - name: gitee-exploits
+    title: Gitee Exploits
+    struct: advisory.GiteeExploit{}
+    desc: |
+      Exploits hosted on Gitee
+  - name: github-exploits
+    title: GitHub Exploits
+    struct: advisory.GitHubExploit{}
+    desc: |
+      Exploits hosted on GitHub
+  - name: gitlab-advisories-community
+    title: GitLab Advisory Database
+    filters: vulncheck.DefaultFilters.PubField("pubdate")
+    desc: >
+      GitLab Advisories Community is a group of security researchers and
+      professionals who collaborate to identify and report security
+      vulnerabilities and issues affecting the GitLab software development
+      platform.
+  - name: gitlab-exploits
+    title: GitLab Exploits
+    struct: advisory.GitLabExploit{}
+    desc: |
+      Exploits hosted on GitLab
+  - name: golang
+    title: Golang packages with package versions
+    struct: api.OSSPackage{}
+    params: vulncheck.DefaultParams.CVEField("cves")
+    desc: >
+      Golang packages with package versions, associated licenses, and relevant
+      CVEs
+  - name: google-0day-itw
+    title: Project Zero In the Wild Exploits
+    desc: Project Zero's In the Wild Exploits exploits list are curated by Google's
+      Project Zero team and tracks zero day exploits found in the wild.
+    struct: advisory.ITWExploit{}
+  - name: grafana
+    title: Grafana Labs Security Fixes
+    desc: Grafana Labs security fixes are official notifications released by Grafana
+      Labs to address security vulnerabilities and updates in their software
+      products. These advisories provide important information about the
+      vulnerabilities, their potential impact, and recommendations for users to
+      apply necessary patches or updates to ensure the security of their
+      systems.
+    struct: advisory.Grafana{}
+  - name: greynoise-metadata
+    title: GreyNoise Metadata
+    struct: advisory.GreyNoiseDetection{}
+    params: vulncheck.DefaultParams.CVEField("cves")
+    filters: vulncheck.DefaultFilters.PubField("created_at")
+    desc: >
+      GreyNoise Metadata Advisories are a type of security advisory that
+      provides information about metadata associated with various IP addresses,
+      domains, and other internet-connected devices.
+  - name: hackage
+    title: Hackage (Haskell) packages with package versions
+    struct: api.OSSPackage{}
+    params: vulncheck.DefaultParams.CVEField("cves")
+    desc: Hackage (Haskell) packages with package versions, associated licenses, and
+      relevant CVEs
+  - name: hashicorp
+    title: HashiCorp Security Updates
+    desc: HashiCorp security updates are official notifications released by
+      HashiCorp to address security vulnerabilities and updates in their
+      software products. These advisories provide important information about
+      the vulnerabilities, their potential impact, and recommendations for users
+      to apply necessary patches or updates to ensure the security of their
+      systems.
+    struct: advisory.HashiCorp{}
+  - name: hex
+    title: Hex (Erlang) packages with package versions
+    struct: api.OSSPackage{}
+    params: vulncheck.DefaultParams.CVEField("cves")
+    desc: Hex (Erlang, Elixir) packages with package versions, associated licenses,
+      and relevant CVEs
+  - name: hikvision
+    title: Hikvision Security Advisories
+    desc: Hikvision security advisories are official notifications released by
+      Hikvision to address security vulnerabilities and updates in their
+      software products. These advisories provide important information about
+      the vulnerabilities, their potential impact, and recommendations for users
+      to apply necessary patches or updates to ensure the security of their
+      systems.
+    struct: advisory.HIKVision{}
+  - name: hillrom
+    title: Hillrom Advisories
+    struct: advisory.HillromAdvisory{}
+    desc: >
+      Hillrom Advisories are official notifications released by Hillrom, a
+      leading global medical technology company. These advisories address
+      security vulnerabilities and updates in Hillrom's medical devices and
+      healthcare IT solutions. They provide critical information about potential
+      risks, recommended actions, and available patches or updates to ensure the
+      security and privacy of patient data and the proper functioning of Hillrom
+      products.
+  - name: hitachi
+    title: Hitachi Software Vulnerabilities
+    struct: advisory.Hitachi{}
+    desc: >
+      Hitachi Software Vulnerability Information provides updates and
+      notifications about security vulnerabilities and related software updates
+      in Hitachi's software products. These notifications highlight potential
+      risks, impacts, and recommended actions to mitigate vulnerabilities and
+      protect systems from cyber threats.
+  - name: hkcert
+    title: Hong Kong CERT Security Bulletins
+    struct: advisory.HKCert{}
+    desc: >
+      Hong Kong CERT security bulletins are official notifications released by
+      the Hong Kong CERT to address security vulnerabilities and updates. These
+      advisories provide important information about the vulnerabilities, their
+      potential impact, and recommendations for users to apply necessary patches
+      or updates to ensure security.
+  - name: hp
+    title: HP Security Bulletins
+    desc: HP security bulletins are official notifications released by HP to address
+      security vulnerabilities and updates in their software and hardware
+      products. These advisories provide important information about the
+      vulnerabilities, their potential impact, and recommendations for users to
+      apply necessary patches or updates to ensure the security of their
+      systems.
+    struct: advisory.HP{}
+  - name: huawei-euleros
+    title: OpenEuler Operating System Security Advisories
+    desc: OpenEuler Open Enterprise Operating System Security Advisories are
+      official notifications released by the EulerOS security team to address
+      security vulnerabilities and updates in the open enterprise EulerOS
+      operating system. These advisories provide important information about the
+      vulnerabilities, their potential impact, and recommendations for users to
+      apply necessary patches or updates to ensure the security of their
+      systems.
+    struct: advisory.HuaweiEulerOS{}
+  - name: huawei-ips
+    title: Huawei IPS Vulnerabilities
+    desc: Huawei IPS Vulnerabilities are official notifications released by Huawei
+      to address security vulnerabilities caught by Huawei's Intrusion
+      Prevention System. These vulnerability notifications provide important
+      information about the vulnerabilities, their potential impact, and
+      recommendations for users to apply necessary patches or updates to ensure
+      the security of their systems.
+    struct: advisory.HuaweiIPS{}
+  - name: huawei-psirt
+    title: Huawei Security Bulletins
+    desc: Huawei PSIRT seucrity bulletins are official notifications released by the
+      Huawei Product Security Incident Response Team (PSIRT) to address security
+      vulnerabilities and updates. These advisories provide important
+      information about the vulnerabilities, their potential impact, and
+      recommendations for users to apply necessary patches or updates to ensure
+      security.
+    struct: advisory.Huawei{}
+  - name: ibm
+    title: IBM Security Bulletins
+    desc: IBM security bulletins are official notifications released by IBM to
+      address security vulnerabilities and updates in their software products.
+      These advisories provide important information about the vulnerabilities,
+      their potential impact, and recommendations for users to apply necessary
+      patches or updates to ensure the security of their systems.
+    struct: advisory.IBM{}
+  - name: il-alerts
+    title: Gov.il Security Alerts
+    struct: advisory.IsraeliAlert{}
+    desc: >
+      Gov.il Security Alerts are official notifications issued by the Israeli
+      government to provide timely information and updates on cybersecurity
+      threats, vulnerabilities, and incidents. These alerts aim to raise
+      awareness among government entities, critical infrastructure sectors, and
+      the public about emerging cyber threats and provide recommended actions to
+      mitigate risks.
+  - name: il-vulnerabilities
+    title: Gov.il CVE Advisories
+    struct: advisory.IsraeliVulnerability{}
+    desc: >
+      Gov.il CVE Security Advisories are official notifications released by the
+      Israeli government to address security vulnerabilities identified through
+      the Common Vulnerabilities and Exposures (CVE) system. These advisories
+      provide detailed information about specific vulnerabilities, their
+      potential impact, and recommended actions to mitigate the risks.
+  - name: incibe
+    title: Incibe CERT Early Warnings
+    desc: Incibe CERT early warnings are official notifications released by
+      the  National Cybersecurity Institute of Spain (Incibe) to address
+      security vulnerabilities and updates. These advisories provide important
+      information about the vulnerabilities, their potential impact, and
+      recommendations for users to apply necessary patches or updates to ensure
+      security.
+    struct: advisory.IncibeAdvisory{}
+  - name: initial-access
+    title: VulnCheck Initial Access Intelligence
+    filters: vulncheck.DefaultFilters.PubField("artifacts.dateAdded")
+    desc: The initial-access index contains data on Initial Access exploits. These
+      exploits are typically the most high impact exploit published. These
+      vulnerabilities, also sometimes referred to as Remote Code Execution (RCE)
+      vulnerabilities, are remote in nature, and typically do not require
+      credentials to exploit.
+  - name: intel
+    title: Intel® Product Security Center Advisories
+    desc: Intel Product Security Center advisories are official notifications
+      released by Intel to address security vulnerabilities and updates in their
+      software and hardware products. These advisories provide important
+      information about the vulnerabilities, their potential impact, and
+      recommendations for users to apply necessary patches or updates to ensure
+      the security of their systems.
+    struct: advisory.Intel{}
+  - name: jenkins
+    title: Jenkins Security Advisories
+    desc: Jenkins security advisories are official notifications released by Jenkins
+      to address security vulnerabilities and updates in their software
+      products. These advisories provide important information about the
+      vulnerabilities, their potential impact, and recommendations for users to
+      apply necessary patches or updates to ensure the security of their
+      systems.
+    struct: advisory.Jenkins{}
+  - name: jnj
+    title: Johnson & Johnson Advisories
+    struct: advisory.JNJAdvisory{}
+    desc: >
+      Johnson & Johnson's Vulnerability Disclosure Reporting is a process
+      through which individuals or security researchers can responsibly report
+      potential vulnerabilities in Johnson & Johnson's products, services, or
+      systems.
+  - name: kaspersky-ics-cert
+    title: Kaspersky ICS CERT
+    struct: advisory.KasperskyICSCERTAdvisory{}
+    desc: >
+      Kaspersky ICS CERT (Industrial Control Systems Computer Emergency Response
+      Team) is a specialized unit within Kaspersky that focuses on cybersecurity
+      for industrial control systems.
+  - name: krcert-security-notices
+    title: KR-CERT Notices
+    struct: advisory.KRCertAdvisory{}
+    desc: >
+      KR-CERT (Korea Internet & Security Agency Computer Emergency Response
+      Team) Security Notices are official notifications issued by KR-CERT, the
+      national computer emergency response team of South Korea.
+  - name: krcert-vulnerabilities
+    title: KR-CERT Vulnerabilities
+    struct: advisory.KRCertAdvisory{}
+    desc: >
+      KR-CERT (Korea Internet & Security Agency Computer Emergency Response
+      Team) provides valuable information on vulnerabilities that affect the
+      South Korean cyberspace.
+  - name: kubernetes
+    title: Kubernetes Security Issues
+    desc: Kubernetes security issues are official notifications released by the
+      Kubernetes Security Response Committee to address security vulnerabilities
+      and updates in their software products. These advisories provide important
+      information about the vulnerabilities, their potential impact, and
+      recommendations for users to apply necessary patches or updates to ensure
+      the security of their systems.
+    struct: advisory.K8S{}
+  - name: lexmark
+    title: Lexmark Security Advisories
+    struct: advisory.LexmarkAdvisory{}
+    desc: Lexmark security advisories are official notifications released by Lexmark
+      to address security vulnerabilities and updates in their software
+      products. These advisories provide important information about the
+      vulnerabilities, their potential impact, and recommendations for users to
+      apply necessary patches or updates to ensure the security of their
+      systems.
+  - name: macert
+    title: Moroccan CERT Security Bulletins
+    desc: Moroccan CERT security bulletins are official notifications released by
+      the Moroccan CERT to address security vulnerabilities and updates. These
+      advisories provide important information about the vulnerabilities, their
+      potential impact, and recommendations for users to apply necessary patches
+      or updates to ensure security.
+    struct: advisory.MACert{}
+  - name: manageengine
+    title: ManageEngine Security Updates
+    desc: ManageEngine security updates are official notifications released by the
+      ManageEngine Security Response Center to address security vulnerabilities
+      and updates in their software products. These advisories provide important
+      information about the vulnerabilities, their potential impact, and
+      recommendations for users to apply necessary patches or updates to ensure
+      the security of their systems.
+    struct: advisory.ManageEngineAdvisory{}
+  - name: maven
+    title: Maven (Java) packages with package versions
+    struct: api.OSSPackage{}
+    params: vulncheck.DefaultParams.CVEField("cves")
+    desc: Maven (Java) packages with package versions, associated licenses, and
+      relevant CVEs
+  - name: mediatek
+    title: MediaTek Security Bulletins
+    desc: MediaTek security advisories are official notifications released by
+      MediaTek to address security vulnerabilities and updates in their software
+      products. These advisories provide important information about the
+      vulnerabilities, their potential impact, and recommendations for users to
+      apply necessary patches or updates to ensure the security of their
+      systems.
+    struct: advisory.Mediatek{}
+  - name: medtronic
+    title: Medtronic Security Bulletins
+    desc: Medtronic security bulletins are official notifications released by
+      Medtronic to address security vulnerabilities and updates in their
+      software products. These advisories provide important information about
+      the vulnerabilities, their potential impact, and recommendations for users
+      to apply necessary patches or updates to ensure the security of their
+      systems.
+    struct: advisory.MedtronicAdvisory{}
+  - name: metasploit
+    title: Metasploit Modules
+    desc: Metasploit Modules is a list of modules that can be utilized via the
+      metasploit framework for pentesting.
+    struct: advisory.MetasploitExploit{}
+  - name: mikrotik
+    title: MikroTik Security Advisories
+    desc: MikroTik security bulletins are official notifications released by
+      MikroTik to address security vulnerabilities and updates in their software
+      products. These advisories provide important information about the
+      vulnerabilities, their potential impact, and recommendations for users to
+      apply necessary patches or updates to ensure the security of their
+      systems.
+    struct: advisory.Mikrotik{}
+  - name: mitsubishi-electric
+    title: Mitsubishi Electric Vulnerabilities
+    desc: Mitsubishi Electric Vulnerabilities are official notifications released by
+      the Mitsubishi Electric PSIRT (Product Security Incident Response Team) to
+      address security vulnerabilities and updates in their software products.
+      These advisories provide important information about the vulnerabilities,
+      their potential impact, and recommendations for users to apply necessary
+      patches or updates to ensure the security of their systems.
+    struct: advisory.MitsubishiElectricAdvisory{}
+  - name: mongodb
+    title: MongoDB Security Alerts
+    desc: MongoDB security alerts are official notifications released by MongoDB to
+      address security vulnerabilities and updates in their software products.
+      These advisories provide important information about the vulnerabilities,
+      their potential impact, and recommendations for users to apply necessary
+      patches or updates to ensure the security of their systems.
+    struct: advisory.MongoDB{}
+  - name: moxa
+    title: Moxa Security Advisories
+    desc: Moxa security advisories are official notifications released by the Moxa
+      Product Security Incident Response Team (PSIRT) to address security
+      vulnerabilities and updates in their software products. These advisories
+      provide important information about the vulnerabilities, their potential
+      impact, and recommendations for users to apply necessary patches or
+      updates to ensure the security of their systems.
+    struct: advisory.MoxaAdvisory{}
+  - name: mozilla
+    title: Mozilla Foundation Security Advisories
+    desc: Mozilla security advisories are official notifications released by the
+      Mozilla Foundation to address security vulnerabilities and updates in
+      their software products. These advisories provide important information
+      about the vulnerabilities, their potential impact, and recommendations for
+      users to apply necessary patches or updates to ensure the security of
+      their systems.
+    struct: advisory.MozillaAdvisory{}
+  - name: netapp
+    title: NetApp Security Advisories
+    desc: NetApp Security Advisories are official notifications released by the
+      NetApp PSIRT (Product Security Incident Response Team) to address security
+      vulnerabilities and updates in their software products. These advisories
+      provide important information about the vulnerabilities, their potential
+      impact, and recommendations for users to apply necessary patches or
+      updates to ensure the security of their systems.
+    struct: advisory.NetApp{}
+  - name: netgear
+    title: NETGEAR Security Advisories
+    desc: NETGEAR Security Advisories are official notifications released by NETGEAR
+      to address security vulnerabilities and updates in their software
+      products. These advisories provide important information about the
+      vulnerabilities, their potential impact, and recommendations for users to
+      apply necessary patches or updates to ensure the security of their
+      systems.
+    struct: advisory.Netgear{}
+  - name: nginx
+    title: Nginx Security Advisories
+    desc: Nginx security advisories are official notifications released by F5 to
+      address security vulnerabilities and updates in their software products.
+      These advisories provide important information about the vulnerabilities,
+      their potential impact, and recommendations for users to apply necessary
+      patches or updates to ensure the security of their systems.
+    struct: advisory.NginxAdvisory{}
+  - name: nist-nvd
+    title: NIST NVD 1.0 CVE data built from NIST NVD 2.0 CVE Data
+    params: vulncheck.DefaultParams.CVEField("cve.CVE_data_meta.ID")
+    large: true
+    struct: api.CveItems{}
+    desc: NIST NVD (National Institute of Standards and Technology National
+      Vulnerability Database) version 1.0 is an early release of a comprehensive
+      repository of vulnerability information and security-related data. It
+      serves as a valuable resource for cybersecurity professionals,
+      researchers, and organizations by providing detailed information on known
+      software vulnerabilities, including their severity, impact, and associated
+      references. NVD version 1.0 offers a structured format for accessing and
+      analyzing vulnerability data, aiding in the identification and mitigation
+      of security risks across various software and hardware products.
+  - name: nist-nvd2
+    title: NIST NVD 2.0
+    params: vulncheck.DefaultParams.CVEField("id")
+    desc: The National Institute of Standards and Technology (NIST) National
+      Vulnerability Database (NVD) v2.0 is a comprehensive repository of
+      security vulnerability data, including Common Vulnerabilities and
+      Exposures (CVEs). It provides a variety of information on CVEs, such as
+      their severity, impact, and remediation strategies. NVD v2.0 also provides
+      a Common Vulnerability Scoring System (CVSS) v2.0 calculator, which allows
+      users to calculate the severity of a CVE based on its specific
+      characteristics.
+  - name: nist-nvd2-cpematch
+    title: NIST NVD 2.0 CPE Match
+    large: true
+    filters: vulncheck.DefaultFilters.PubField("created")
+    noCve: true
+    desc: NIST NVD 2.0 CPE Match Advisories are a type of security advisory that
+      provides information about Common Platform Enumeration (CPE) matches
+      associated with vulnerabilities in the National Vulnerability Database
+      (NVD) 2.0. CPEs are standardized identifiers for software applications,
+      operating systems, and other IT systems, and are used to help
+      organizations identify and track vulnerabilities and other security
+      issues. NIST NVD 2.0 CPE Match Advisories provide information about the
+      CPEs associated with specific vulnerabilities listed in the NVD 2.0. This
+      information can help organizations better understand the scope and
+      potential impact of a given vulnerability, and to take appropriate action
+      to mitigate the associated risks. NIST NVD 2.0 CPE Match Advisories may
+      also include information about known exploits or other factors that may
+      increase the severity of a given vulnerability. By leveraging the
+      information provided by NIST NVD 2.0 CPE Match Advisories, organizations
+      can gain a deeper understanding of potential security risks and
+      vulnerabilities, and develop more effective strategies for mitigating
+      those risks. The advisories can also help organizations to prioritize
+      their response to potential security incidents, and to ensure that
+      critical systems and applications are appropriately secured and protected
+      against advanced and persistent threats. Overall, NIST NVD 2.0 CPE Match
+      Advisories are an important tool for organizations looking to maintain the
+      security and integrity of their networks and systems.
+  - name: nodejs
+    title: NodeJS Security Advisories
+    struct: advisory.NodeJS{}
+    desc: NodeJS security release notices are official notifications released by
+      NodeJS to address security vulnerabilities and updates in their software
+      products. These advisories provide important information about the
+      vulnerabilities, their potential impact, and recommendations for users to
+      apply necessary patches or updates to ensure security.
+  - name: npm
+    title: NPM (JS/TS) packages with package versions
+    struct: api.OSSPackage{}
+    params: vulncheck.DefaultParams.CVEField("cves")
+    desc: NPM (Javascript, Typescript) packages with package versions, associated
+      licenses, and relevant CVEs
+  - name: nuget
+    title: Nuget (C#/F#) packages with package versions
+    struct: api.OSSPackage{}
+    params: vulncheck.DefaultParams.CVEField("cves")
+    desc: NuGet (.NET) packages with package versions, associated licenses, and
+      relevant CVEs
+  - name: nvidia
+    title: NVIDIA Security Bulletins
+    desc: NVIDIA security bulletins are official notifications released by NVIDIA to
+      address security vulnerabilities and updates in their software products.
+      These advisories provide important information about the vulnerabilities,
+      their potential impact, and recommendations for users to apply necessary
+      patches or updates to ensure the security of their systems.
+    struct: advisory.SecurityBulletin{}
+  - name: nz-advisories
+    title: CERT NZ Security Advisories
+    desc: CERT NZ security advisories are official notifications released by the New
+      Zealand CERT to address security vulnerabilities and updates. These
+      advisories provide important information about the vulnerabilities, their
+      potential impact, and recommendations for users to apply necessary patches
+      or updates to ensure security.
+    struct: advisory.NZAdvisory{}
+  - name: opam
+    title: opam (OCaml) packages with package versions
+    struct: api.OSSPackage{}
+    params: vulncheck.DefaultParams.CVEField("cves")
+    desc: opam (OCaml) packages with package versions, associated licenses, and
+      relevant CVEs
+  - name: openbsd
+    title: OpenBSD Security Fixes
+    desc: OpenBSD security advisories are official notifications released by the
+      OpenBSD security team to address security vulnerabilities and updates in
+      the open source OpenBSD operating system. These advisories provide
+      important information about the vulnerabilities, their potential impact,
+      and recommendations for users to apply necessary patches or updates to
+      ensure the security of their systems.
+    struct: advisory.OpenBSD{}
+  - name: openssl-secadv
+    title: OpenSSL Security Advisories
+    struct: advisory.OpenSSLSecAdv{}
+    desc: OpenSSL Security Advisories are official communications issued by the
+      OpenSSL project, an open-source software library that provides
+      cryptographic functions to protect communications over computer networks.
+      These advisories are designed to provide information and guidance on
+      potential security vulnerabilities and threats affecting OpenSSL software.
+      OpenSSL Security Advisories typically include technical details about the
+      vulnerability or issue, as well as recommended remediation and risk
+      mitigation steps. They may also include severity ratings and CVSS scores
+      to help organizations prioritize their response to potential security
+      incidents. The OpenSSL security team works closely with the community to
+      identify and address security concerns, and is committed to providing
+      timely and effective security advisories to help protect user data and
+      sensitive information. OpenSSL Security Advisories cover a wide range of
+      topics, including vulnerabilities related to key management, cryptographic
+      weaknesses, and protocol issues. By providing regular updates and guidance
+      on potential security threats, OpenSSL helps to ensure the ongoing
+      security and reliability of its software for its users. Additionally,
+      OpenSSL encourages open and transparent collaboration with the community
+      to help identify and address potential security concerns, making it an
+      important component of secure communications infrastructure.
+  - name: openwrt
+    title: OpenWrt Security Advisories
+    desc: OpenWRT security advisories are official notifications released by the
+      OpenWRT team to address security vulnerabilities and updates in the open
+      source OpenWRT operating system. These advisories provide important
+      information about the vulnerabilities, their potential impact, and
+      recommendations for users to apply necessary patches or updates to ensure
+      the security of their systems.
+    struct: advisory.WRT{}
+  - name: oracle
+    title: Oracle Security Advisories
+    struct: advisory.MetaData{}
+    desc: Oracle security advisories are official notifications released by Oracle
+      to address security vulnerabilities and updates in their software
+      products. These advisories provide important information about the
+      vulnerabilities, their potential impact, and recommendations for users to
+      apply necessary patches or updates to ensure the security of their
+      systems.
+  - name: oracle-cpu
+    title: Oracle Critical Patch Update Advisories
+    desc: Oracle Critical Patch Updates provide security patches for supported
+      Oracle on-premises products.
+    struct: advisory.OracleCPU{}
+  - name: oracle-cpu-csaf
+    title: Oracle Critical Patch Updates CSAF
+    desc: Oracle Critical Patch Updates provide security patches for supported
+      Oracle on-premises products. These CPUs are released as CSAF on a
+      quarterly basis.
+    struct: advisory.OracleCPUCSAF{}
+  - name: palo-alto
+    title: Palo Alto Networks Security Advisories
+    desc: Palo Alto Networks Security Advisories are official notifications released
+      by the Palo Alto Networks Product Security Incident Response Team
+      (PSIRT)  to address security vulnerabilities and updates in their software
+      products. These advisories provide important information about the
+      vulnerabilities, their potential impact, and recommendations for users to
+      apply necessary patches or updates to ensure the security of their
+      systems.
+    struct: advisory.PaloAltoAdvisory{}
+  - name: philips
+    title: Philips Security Advisories
+    desc: Philips security advisories are official notifications released by Philips
+      to address security vulnerabilities and updates in their software
+      products. These advisories provide important information about the
+      vulnerabilities, their potential impact, and recommendations for users to
+      apply necessary patches or updates to ensure the security of their
+      systems.
+    struct: advisory.PhilipsAdvisory{}
+  - name: phoenix-contact
+    title: Phoenix Contact Security Advisories
+    desc: Phoenix Contact security advisories are official notifications released by
+      the Phoenix Contact Product Security Incident Response Team to address
+      security vulnerabilities and updates in their software products. These
+      advisories provide important information about the vulnerabilities, their
+      potential impact, and recommendations for users to apply necessary patches
+      or updates to ensure the security of their systems.
+    struct: advisory.PhoenixContactAdvisory{}
+  - name: pypi
+    title: PyPi (Python) packages with package versions
+    struct: api.OSSPackage{}
+    params: vulncheck.DefaultParams.CVEField("cves")
+    desc: PyPI (Python) packages with package versions, associated licenses, and
+      relevant CVEs
+  - name: qnap
+    title: QNAP Security Advisories
+    desc: QNAP security advisories are official notifications released by QNAP to
+      address security vulnerabilities and updates in their software products.
+      These advisories provide important information about the vulnerabilities,
+      their potential impact, and recommendations for users to apply necessary
+      patches or updates to ensure the security of their systems.
+    struct: advisory.QNAPAdvisory{}
+  - name: qualcomm
+    title: Qualcomm Security Bulletins
+    desc: Qualcomm security bulletins are official notifications released by
+      Qualcomm Technologies to address security vulnerabilities and updates in
+      their software products. These advisories provide important information
+      about the vulnerabilities, their potential impact, and recommendations for
+      users to apply necessary patches or updates to ensure the security of
+      their systems.
+    struct: advisory.Qualcomm{}
+  - name: qualys
+    title: Qualys Security Advisories
+    desc: Qualys security advisories are official notifications released by Qualys
+      to address software security flaws found by Qualys and can include proof
+      of concept exploit code.
+    struct: advisory.Qualys{}
+  - name: redhat
+    title: Red Hat Security Advisories
+    params: vulncheck.DefaultParams.CVEField("CVE")
+    struct: advisory.RedhatCVE{}
+    desc: Red Hat Security Advisories, commonly referred to as RHSA, are official
+      notifications and updates provided by Red Hat, Inc., a leading provider of
+      open-source solutions and enterprise Linux distributions. These advisories
+      are a critical part of Red Hat's commitment to ensuring the security of
+      their products and services.
+  - name: rocky
+    title: Rocky Linux Advisories
+    struct: api.Update{}
+    desc: The Rocky Linux community and development team work diligently to identify
+      and address vulnerabilities by providing regular security updates and
+      advisories, helping to maintain a more secure environment for Rocky Linux
+      users.
+  - name: rustsec-advisories
+    title: RustSec Advisories
+    desc: RustSec Advisories are security advisories filed against crates published
+      via crates.io and are maintained by the Rust Secure Code Working Group.
+    struct: advisory.RustsecAdvisory{}
+    params: vulncheck.DefaultParams.CVEField("advisory.aliases")
+  - name: sacert
+    title: Saudi CERT
+    desc: Saudi CERT security alerts are official notifications released by the
+      Saudi CERT to address security vulnerabilities and updates. These
+      advisories provide important information about the vulnerabilities, their
+      potential impact, and recommendations for users to apply necessary patches
+      or updates to ensure security.
+    struct: advisory.SAAdvisory{}
+  - name: saint
+    title: SAINT Exploits
+    desc: SAINT Exploits exploits list are advisories and contain vulnerability
+      details that are curated by the SAINT Corporation.
+    struct: advisory.SaintExploit{}
+  - name: salesforce
+    title: SalesForce Security Advisories
+    desc: SalesForce security advisories are official notifications released by
+      SalesForce to address security vulnerabilities and updates in their
+      software products. These advisories provide important information about
+      the vulnerabilities, their potential impact, and recommendations for users
+      to apply necessary patches or updates to ensure the security of their
+      systems.
+    struct: advisory.SalesForce{}
+  - name: samba
+    title: Samba Security Releases
+    desc: Samba security releases are official notifications released by the Samba
+      open source project to address security vulnerabilities and updates in the
+      open source Samba project. These advisories provide important information
+      about the vulnerabilities, their potential impact, and recommendations for
+      users to apply necessary patches or updates to ensure the security of
+      their systems.
+    struct: advisory.Samba{}
+  - name: schneider-electric
+    title: Schneider Electric Security Notifications
+    struct: advisory.SchneiderElectricAdvisory{}
+    desc: Schneider Electric security notifications are official notifications
+      released by Schneider Electric to address security vulnerabilities and
+      updates in their software products. These advisories provide important
+      information about the vulnerabilities, their potential impact, and
+      recommendations for users to apply necessary patches or updates to ensure
+      the security of their systems.
+  - name: siemens
+    title: Siemens Security Advisories
+    desc: Siemens security advisories are official notifications released by the
+      Siemens ProductCERT to address security vulnerabilities and updates in
+      their software products. These advisories provide important information
+      about the vulnerabilities, their potential impact, and recommendations for
+      users to apply necessary patches or updates to ensure the security of
+      their systems.
+    struct: advisory.SiemensAdvisory{}
+  - name: singcert
+    title: CSA Alerts and Advisories
+    desc: CSA (Cyber Security Agency of Singapore) alerts and advisories are
+      official notifications released by the CSA to address security
+      vulnerabilities and updates. These advisories provide important
+      information about the vulnerabilities, their potential impact, and
+      recommendations for users to apply necessary patches or updates to ensure
+      security.
+    struct: advisory.SingCert{}
+  - name: solarwinds
+    title: SolarWinds Security Vulnerabilities
+    desc: SolarWinds security vulnerabilities are official notifications released by
+      SolarWinds to address security vulnerabilities and updates in their
+      software products. These advisories provide important information about
+      the vulnerabilities, their potential impact, and recommendations for users
+      to apply necessary patches or updates to ensure the security of their
+      systems.
+    struct: advisory.SolarWindsAdvisory{}
+  - name: sonicwall
+    title: SonicWall Security Advisories
+    desc: SonicWall security advisories are official notifications released by the
+      SonicWall Product Security Incident Response Team (PSIRT) to address
+      security vulnerabilities and updates in their software products. These
+      advisories provide important information about the vulnerabilities, their
+      potential impact, and recommendations for users to apply necessary patches
+      or updates to ensure the security of their systems.
+    struct: advisory.SonicWallAdvisory{}
+  - name: spacelabs-healthcare
+    title: Spacelabs Security Advisories
+    desc: Spacelabs security advisories are official notifications released by
+      Spacelabs to address security vulnerabilities and updates in their
+      software products. These advisories provide important information about
+      the vulnerabilities, their potential impact, and recommendations for users
+      to apply necessary patches or updates to ensure the security of their
+      systems.
+    struct: advisory.SpacelabsHealthcareAdvisory{}
+  - name: spring
+    title: Spring Security Advisories
+    desc: Spring security advisories are official notifications released by the
+      VMWare Security Response team to address security vulnerabilities and
+      updates in the open source Spring framework. These advisories provide
+      important information about the vulnerabilities, their potential impact,
+      and recommendations for users to apply necessary patches or updates to
+      ensure the security of their systems.
+    struct: advisory.Spring{}
+  - name: ssd
+    title: SSD Secure Disclosure Advisories
+    desc: SSD Secure Disclosure Advisories are official advisories released by SSD
+      Secure Disclosure. Many advisories contain not only vulnerability details
+      but also proof of concept code.
+    struct: advisory.SSDAdvisory{}
+  - name: stryker
+    title: Stryker Security Advisories
+    desc: Stryker security advisories are official notifications released by Stryker
+      to address security vulnerabilities and updates in their software
+      products. These advisories provide important information about the
+      vulnerabilities, their potential impact, and recommendations for users to
+      apply necessary patches or updates to ensure the security of their
+      systems.
+    struct: advisory.StrykerAdvisory{}
+  - name: sudo
+    title: Sudo Security Advisories
+    desc: Sudo security advisories are official notifications released by the open
+      source sudo project to address security vulnerabilities and updates in
+      their software products. These advisories provide important information
+      about the vulnerabilities, their potential impact, and recommendations for
+      users to apply necessary patches or updates to ensure the security of
+      their systems.
+    struct: advisory.Sudo{}
+  - name: suse
+    title: SUSE Security Advisories
+    struct: advisory.Cvrf{}
+    large: true
+    noCve: true
+    desc: SUSE Security Advisories are official notifications from SUSE, a prominent
+      open-source software company, that inform users about security
+      vulnerabilities and provide guidance on mitigating risks in their
+      Linux-based products and solutions. These advisories play a crucial role
+      in helping SUSE users maintain the security and integrity of their
+      systems.
+  - name: swift
+    title: Swift packages with package versions
+    struct: api.OSSPackage{}
+    params: vulncheck.DefaultParams.CVEField("cves")
+    desc: Swift packages with package versions, associated licenses, and relevant
+      CVEs
+  - name: swisslog-healthcare
+    title: Swisslog Healthcare CVE Disclosures
+    desc: Swisslog Healthcare CVE Disclosures are official notifications released by
+      Swisslog Healthcare to address security vulnerabilities and updates in
+      their software products. These advisories provide important information
+      about the vulnerabilities, their potential impact, and recommendations for
+      users to apply necessary patches or updates to ensure the security of
+      their systems.
+    struct: advisory.SwisslogHealthcareAdvisory{}
+  - name: teamviewer
+    title: TeamViewer Security Bulletins
+    desc: TeamViewer security bulletins are official notifications released by
+      TeamViewer to address security vulnerabilities and updates in their
+      software products. These advisories provide important information about
+      the vulnerabilities, their potential impact, and recommendations for users
+      to apply necessary patches or updates to ensure the security of their
+      systems.
+    struct: advisory.TeamViewer{}
+  - name: threat-actors
+    title: VulnCheck Threat Actors Data
+    desc: The VulnCheck Threat Actors index contains data related to various threat
+      actors.
+    struct: api.ThreatActorWithExternalObjects{}
+    params: vulncheck.DefaultParams.CVEField("cve_references.cve")
+  - name: tibco
+    title: TIBCO Security Advisories
+    desc: TIBCO security advisories are official notifications released by TIBCO to
+      address security vulnerabilities and updates in their software products.
+      These advisories provide important information about the vulnerabilities,
+      their potential impact, and recommendations for users to apply necessary
+      patches or updates to ensure the security of their systems.
+    struct: advisory.Tibco{}
+  - name: tp-link
+    title: TP-Link Security Advisories
+    desc: TP-Link security advisories are official notifications released by TP-Link
+      to address security vulnerabilities and updates in their software
+      products. These advisories provide important information about the
+      vulnerabilities, their potential impact, and recommendations for users to
+      apply necessary patches or updates to ensure the security of their
+      systems.
+    struct: advisory.TPLink{}
+  - name: trendmicro
+    title: Trend Micro Security Bulletins
+    desc: Trend Micro security bulletins are official notifications released by
+      Trend Micro to address security vulnerabilities and updates in their
+      software products. These advisories provide important information about
+      the vulnerabilities, their potential impact, and recommendations for users
+      to apply necessary patches or updates to ensure the security of their
+      systems.
+    struct: advisory.TrendMicro{}
+  - name: twcert
+    title: Taiwan CERT Vulnerability Notes
+    struct: advisory.TWCertAdvisory{}
+    desc: Taiwan CERT vulnerability notes are official notifications released by the
+      Taiwan CERT to address security vulnerabilities and updates. These
+      advisories provide important information about the vulnerabilities, their
+      potential impact, and recommendations for users to apply necessary patches
+      or updates to ensure security.
+  - name: ubiquiti
+    title: Ubiquiti Security Advisory Bulletins
+    struct: advisory.Ubiquiti{}
+    desc: Ubiquiti security advisorie bulletins are official notifications released
+      by Dell to address security vulnerabilities and updates in their software
+      products. These advisories provide important information about the
+      vulnerabilities, their potential impact, and recommendations for users to
+      apply necessary patches or updates to ensure the security of their
+      systems.
+  - name: ubuntu
+    title: Ubuntu Security Notices
+    struct: advisory.UbuntuCVE{}
+    desc: Ubuntu security advisories are official notifications released by Ubuntu
+      to address security vulnerabilities and updates in their software
+      products. These advisories provide important information about the
+      vulnerabilities, their potential impact, and recommendations for users to
+      apply necessary patches or updates to ensure the security of their
+      systems.
+  - name: usom
+    title: USOM Security Notices
+    struct: advisory.USOMAdvisory{}
+    desc: USOM security notices are official notifications released by the Turkey
+      USOM TR-CERT to address security vulnerabilities and updates. These
+      advisories provide important information about the vulnerabilities, their
+      potential impact, and recommendations for users to apply necessary patches
+      or updates to ensure the security of their systems.
+  - name: vapidlabs
+    title: VapidLabs Vulnerabilities
+    desc: VapidLabs Vulnerabilities are advisories and contain vulnerability details
+      along with exploits that are curated by Larry Cashdollar.
+    struct: advisory.VapidLabsAdvisory{}
+  - name: vde
+    title: VDE CERT Advisories
+    struct: advisory.VDEAdvisory{}
+    desc: VDE CERT Advisories are official notifications released by VDE CERT to
+      address security vulnerabilities and updates in their software products.
+      These advisories provide important information about the vulnerabilities,
+      their potential impact, and recommendations for users to apply necessary
+      patches or updates to ensure the security of their systems.
+  - name: veeam
+    title: Veeam Security Advisories
+    desc: Veeam security advisories are official notifications released by Veeam to
+      address security vulnerabilities and updates in their software products.
+      These advisories provide important information about the vulnerabilities,
+      their potential impact, and recommendations for users to apply necessary
+      patches or updates to ensure the security of their systems.
+    struct: advisory.Veeam{}
+  - name: vulncheck-nvd
+    title: VulnCheck NVD
+    params: vulncheck.DefaultParams.CVEField("cve.CVE_data_meta.ID")
+    large: true
+    struct: api.CveItemsExtended{}
+    desc: NVD 2.0 CVE data formatted according to the NVD 1.0 CVE schema augmented
+      with VulnCheck data.
+  - name: vulncheck-nvd2
+    title: VulnCheck NVD V2
+    params: vulncheck.DefaultParams.CVEField("id")
+    large: true
+    struct: api.NVD20CVEExtended{}
+    desc: NIST NVD CVE 2.0 API data supplemented with VulnCheck Data
+  - name: vulnerability-aliases
+    title: Vulnerability Aliases
+    desc: "The Vulnerability Aliases index contains the names or aliases associated
+      with a particular vulnerability. Examples: Log4Shell, LogJam, HeatBleed,
+      etc."
+    struct: api.VulnerabilityAlias{}
+    params: vulncheck.DefaultParams.CVEField("cve")
+  - name: vyaire
+    title: Vyaire Security Bulletins
+    struct: advisory.VYAIREAdvisory{}
+    desc: Vyaire security bulletins are official notifications released by Vyaire to
+      address security vulnerabilities and updates in their software products.
+      These advisories provide important information about the vulnerabilities,
+      their potential impact, and recommendations for users to apply necessary
+      patches or updates to ensure the security of their systems.
+  - name: watchguard
+    title: Watchguard Security Advisories
+    struct: advisory.WatchGuard{}
+    desc: WatchGuard security advisories are official notifications released by
+      WatchGuard to address security vulnerabilities and updates in their
+      software products. These advisories provide important information about
+      the vulnerabilities, their potential impact, and recommendations for users
+      to apply necessary patches or updates to ensure the security of their
+      systems.
+  - name: wolfi
+    title: Wolfi Security Advisories
+    params: vulncheck.DefaultParams.CVEField("packages.secfixes.cve")
+    struct: advisory.Wolfi{}
+    desc: Wolfi is a new community Linux undistribution that combines the best
+      aspects of existing container base images with default security measures
+      that will include software signatures powered by Sigstore, provenance, and
+      software bills of material (SBOM).
+  - name: wolfssl
+    title: WolfSSL Vulnerabilities
+    desc: WolfSSL security vulnerabilities are official notifications released by
+      WolfSSL to address security vulnerabilities and updates in their software
+      products. These advisories provide important information about the
+      vulnerabilities, their potential impact, and recommendations for users to
+      apply necessary patches or updates to ensure the security of their
+      systems.
+    struct: advisory.WolfSSL{}
+  - name: yokogawa
+    title: Yokogawa Security Advisories
+    struct: advisory.YokogawaAdvisory{}
+    desc: Yokogawa security advisories are official notifications released by
+      Yokogawa to address security vulnerabilities and updates in their software
+      products. These advisories provide important information about the
+      vulnerabilities, their potential impact, and recommendations for users to
+      apply necessary patches or updates to ensure the security of their
+      systems.
+  - name: zdi
+    title: Zero Day Initiative Advisories
+    desc: Zero Day Initiative advisories are official advisories released by Trend
+      Micro to promote responsible disclosure of vulnerabilities.
+    struct: advisory.ZeroDayAdvisory{}
+  - name: zeroscience
+    title: ZeroScience Vulnerabilities
+    desc: ZeroScience Vulnerabilities are vulnerability notices released by the
+      ZeroScience Lab. Many vulnerabilities contain not only vulnerability
+      details but also proof of concept code.
+    struct: advisory.ZeroScienceAdvisory{}
+  - name: zimbra
+    title: Zimbra Security Advisories
+    struct: advisory.Zimbra{}
+    desc: Zimbra security advisories are official notifications released by Zimbra
+      to address security vulnerabilities and updates in their software
+      products. These advisories provide important information about the
+      vulnerabilities, their potential impact, and recommendations for users to
+      apply necessary patches or updates to ensure the security of their
+      systems.
+  - name: zoom
+    title: Zoom Security Bulletins
+    desc: Zoom security bulletins are official notifications released by Zoom to
+      address security vulnerabilities and updates in their software products.
+      These advisories provide important information about the vulnerabilities,
+      their potential impact, and recommendations for users to apply necessary
+      patches or updates to ensure the security of their systems.
+    struct: advisory.Zoom{}
+  - name: zyxel
+    title: Zyxel Security Advisories
+    struct: advisory.Zyxel{}
+    desc: Zyxel security advisories are official notifications released by Zyxel to
+      address security vulnerabilities and updates in their software products.
+      These advisories provide important information about the vulnerabilities,
+      their potential impact, and recommendations for users to apply necessary
+      patches or updates to ensure the security of their systems.

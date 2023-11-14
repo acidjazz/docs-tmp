@@ -18,10 +18,14 @@ defineOgImage({
 
 <template>
   <span class="gradient" />
-  <ULandingHero direction="horizontal" :ui="{ container: 'flex lg:gap-2' }">
-    <doc-animation json="data-management" />
+  <ULandingHero :ui="{ container: 'flex lg:flex-row lg:gap-2' }">
+    <div class="hidden lg:flex w-[600px] h-[300px] flex-shrink-0">
+      <div class="flex-1 flex items-center justify-center">
+        <u-icon name="i-mdi-book-open-variant" class="text-primary-700 dark:text-primary-400 w-[300px] h-full" />
+      </div>
+    </div>
     <template #title>
-      Documentation for the <span class="text-primary-400">VulnCheck API</span>
+      Documentation for the <span class="text-primary-700 dark:text-primary-400">VulnCheck API</span>
     </template>
     <template #description>
       Explore our guides and examples to learn about and integrate VulnCheck

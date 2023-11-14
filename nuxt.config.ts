@@ -9,13 +9,6 @@ export default defineNuxtConfig({
     'dayjs-nuxt',
     'nuxt-og-image',
   ],
-  app: {
-    head: {
-      script: [
-        { src: '//cdnjs.cloudflare.com/ajax/libs/lottie-web/5.8.1/lottie.min.js' },
-      ],
-    },
-  },
   runtimeConfig: {
     public: {
       appEnv: process.env.APP_ENV || 'localhost',
@@ -31,8 +24,11 @@ export default defineNuxtConfig({
         driver: 'fs',
         base: resolve(__dirname, 'changelog'),
         prefix: '/changelog',
-    }
+      },
     },
+    highlight: {
+      preload: ['go', 'python', 'bash', 'sh']
+    }
   },
   colorMode: {
     preference: 'dark',
@@ -43,7 +39,7 @@ export default defineNuxtConfig({
   nitro: {
     prerender: {
       concurrency: 1,
-      routes: ['/api/search.json'],
+      routes: ['/api/search.json', '/since/2023-08-04'],
     }
   },
   hooks: {
